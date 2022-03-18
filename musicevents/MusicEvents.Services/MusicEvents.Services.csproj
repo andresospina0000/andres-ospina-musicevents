@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="Azure.Storage.Blobs" Version="12.10.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MusicEvents.DataAccess\MusicEvents.DataAccess.csproj" />
+		<ProjectReference Include="..\MusicEvents.Dto\MusicEvents.Dto.csproj" />
+		<ProjectReference Include="..\MusicEvents.Entities\MusicEvents.Entities.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Profiles\" />
+	</ItemGroup>
+
+</Project>
