@@ -151,6 +151,7 @@ public class UserService : IUserService
         var token = new JwtSecurityToken(header, payload);
 
         response.Token = new JwtSecurityTokenHandler().WriteToken(token);
+        response.Email = identity.Email;
         response.Success = true;
 
         return response;
